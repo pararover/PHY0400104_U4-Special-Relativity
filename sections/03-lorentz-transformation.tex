@@ -1,0 +1,57 @@
+\section{Lorentz transformation}
+	\setcounter{equation}{0}
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.55\textwidth]{figures/fig_galilean-transf-01.png}
+	\end{figure}
+	
+	Consider two inertial frames $S$ and $S'$ with coordinate axes $xyz$ and $x'y'z'$ attached to them, with respective origins $O$ and $O'$ respectively. Let the frame $S'$ be moving with respect to $S$ with a uniform velocity $v$ along the $xx'$ axes as shown in the figure above. The origins of the two frames are assumed to coincide when $t=t'=0$.
+	
+	Because the velocity of $S'$ with respect to $S$ is along the $x$-axis, we have
+	\begin{align*}
+		y'=y\qq{and}z'=z
+	\end{align*}
+	
+	According to postulate 1, if the motion of a particle is uniformly rectilinear (i.e. in straight line) in frame $S$, then it must be uniformly rectilinear in frame $S'$ as well. Hence the transformation relating $x$ and $x'$ must be linear, thereby written as
+	\begin{align}
+		x'=\gamma(x-vt) \label{eqn:lorenz-transf:fwd}
+	\end{align}
+	and the inverse transformation is then
+	\begin{align}
+		x=\gamma(x'+vt') \label{eqn:lorenz-transf:inv}
+	\end{align}
+	
+	Substituting for $x'$ in equation (\ref{eqn:lorenz-transf:inv}) using equation (\ref{eqn:lorenz-transf:fwd}), we have
+	\begin{align*}
+		x&=\gamma\qty[\gamma(x-vt)+vt'] \\
+			&=\gamma^2x-\gamma^2vt+\gamma vt' \\
+		\implies \gamma vt'&=\gamma^2vt+x-\gamma^2x \\
+			&=\gamma^2vt+(1-\gamma^2)x \\
+		\implies t'&=\gamma t+\dfrac{(1-\gamma^2)x}{\gamma v}
+	\end{align*}
+	Then we can write the tentative transformation equations as
+	\begin{equation} \label{eqn:lorentz-transf:tentative}
+		\boxed{
+			\begin{aligned}
+				x'&=\gamma(x-vt) \\
+				y'&=y \\
+				z'&=z \\
+				t'&=\gamma t+\dfrac{(1-\gamma^2)x}{\gamma v}
+			\end{aligned}
+		}
+	\end{equation}
+	Let us now consider an EM wave emitted by a point source located at the position $O$ at time $t=0$. The spherical wavefront expands with a speed $c$. Hence the equation of the wavefront in the frame $S$ is
+	\begin{align}
+		x^2+y^2+z^2&=c^2t^2 \label{eqn:lorentz-transf:sph-wf-01}
+	\end{align}
+	The corresponding equation in the frame $S'$ is
+	\begin{align}
+		x'^2+y'^2+z'^2&=c^2t'^2 \label{eqn:lorentz-transf:sph-wf-02}
+	\end{align}
+	Now, using equations (\ref{eqn:lorentz-transf:tentative}) in equation (\ref{eqn:lorentz-transf:sph-wf-02}), we have
+	\begin{align*}
+		\qty[\gamma(x-vt)]^2+y^2+z^2&=c^2\qty[\gamma t+\dfrac{(1-\gamma^2)x}{\gamma v}]^2 \\
+		\implies \gamma^2(x-vt)^2+y^2+z^2&=c^2\qty[\gamma^2t^2+\dfrac{(1-\gamma^2)^2x^2}{\gamma^2v^2}+2\gamma t\dfrac{(1-\gamma^2)x}{\gamma v}] \\
+		\implies \gamma^2x^2+\gamma^2v^2t^2-2\gamma xvt+y^2+z^2&=\gamma^2c^2t^2+\dfrac{(1-\gamma^2)^2c^2x^2}{\gamma^2v^2}+2\gamma c^2t\dfrac{(1-\gamma^2)x}{\gamma v} \\
+		\implies\gamma^2x^2-\dfrac{(1-\gamma^2)^2c^2x^2}{\gamma^2v^2}+y^2+z^2&
+	\end{align*}
