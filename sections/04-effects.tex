@@ -84,3 +84,61 @@
 			}
 		\end{equation*}
 		The above equations are referred to as \emph{Einstein's law of relativistic velocity addition}.
+		
+		\textbf{Example}: A spaceship leaves the Earth at a speed of $0.6c$. A rocket leaves the spaceship at a speed of $0.9c$ with respect to the spaceship. Calculate the speed of the rocket with respect to the Earth if
+		\begin{enumerate}[i)]
+			\item it is fired in the same direction as the spaceship.
+			\item it is fired in the opposite direction as the spaceship.
+		\end{enumerate}
+		\textbf{Solution}: Here we consider
+		\begin{align*}
+			S&\text{: the Earth} \\
+			S'&\text{: the spaceship} \\
+			P&\text{: the rocket}
+		\end{align*}
+		Hence, we have
+		\begin{align*}
+			\text{speed of }S'\text{ w.r.t. }S&=\text{speed of the spaceship w.r.t. the Earth}=|v|=0.6c \\
+			\text{speed of }P\text{ w.r.t. }S'&=\text{speed of the rocket w.r.t. the spaceship}=|u'|=0.9c \\
+			\text{velocity of }P\text{ w.r.t. }S&=\text{speed of the rocket w.r.t. the Earth}=u=?
+		\end{align*}
+		\begin{enumerate}[i)]
+			\item When the rocket is fired in the same direction as the spaceship
+			\begin{figure}[h!]
+				\centering
+				\includegraphics[width=0.7\textwidth]{figures/fig_vel-addn-example-01.png}
+			\end{figure}
+			
+			Here we have
+			\begin{align*}
+				v=0.6c,\quad u'=0.9c
+			\end{align*}
+			Then from Einstein's law of relativistic velocity addition, we have
+			\begin{align*}
+				u&=\dfrac{u'+v}{1+u'v/c^2} \\
+					&=\dfrac{0.9c+0.6c}{1+(0.9c\times0.6c)/c^2} \\
+					&=\dfrac{1.5c}{1+0.54c^2/c^2} \\
+					&=\dfrac{1.5c}{1.54} \\
+				\implies u&=0.974c
+			\end{align*}
+			
+			\item When the rocket is fired in the opposite direction as the spaceship
+			\begin{figure}[h!]
+				\centering
+				\includegraphics[width=0.7\textwidth]{figures/fig_vel-addn-example-02.png}
+			\end{figure}
+			
+			Here we have
+			\begin{align*}
+				v=0.6c,\quad u'=-0.9c
+			\end{align*}
+			Then from Einstein's law of relativistic velocity addition, we have
+			\begin{align*}
+				u&=\dfrac{u'+v}{1+u'v/c^2} \\
+				&=\dfrac{-0.9c+0.6c}{1+(-0.9c\times0.6c)/c^2} \\
+				&=\dfrac{-0.3c}{1-0.54c^2/c^2} \\
+				&=\dfrac{-0.3c}{0.46} \\
+				\implies u&=-0.652c
+			\end{align*}
+			Here the $-$ sign indicates that the rocket is moving towards the Earth.
+		\end{enumerate}
