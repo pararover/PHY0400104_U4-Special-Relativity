@@ -151,7 +151,7 @@
 			\includegraphics[width=0.45\textwidth]{figures/fig_length-contraction.png}
 		\end{figure}
 		
-		Then the rod would be at rest with respect to the moving frame $S'$. If $x_1'$ and $x_2'$ are the coordinates of either ends of the rod in the frame $S'$, then the natural length of the rod is
+		Then the rod would be at rest with respect to the moving frame $S'$. If $x_1'$ and $x_2'$ are the coordinates of either ends of the rod in the frame $S'$, then the natural or \textbf{proper length} of the rod is
 		\begin{align}
 			L_0&=x_2'-x_1' \label{eqn:rod:natural-length}
 		\end{align}
@@ -196,3 +196,67 @@
 			\centering
 			\includegraphics[width=0.5\textwidth]{figures/fig_length-contraction-example-02.png}
 		\end{figure}
+		
+	\subsection{Time dilation}
+		Consider two successive events $P$ and $Q$ that take place at the same position $x'$ in the inertial frame $S'$.
+		
+		Let $t_1'$ and $t_2'$ be the time instants when $P$ and $Q$ occurred, as recorded by an observer in $S'$. Then $S'$ is the rest frame for this observer.
+		
+		The time interval between events in the rest frame of an observer, i.e. as measured by a clock in $S'$ is known as the \textbf{proper time}. Here, the proper time is
+		\begin{align*}
+			\Delta\tau=t_2'-t_1'
+		\end{align*}
+		
+		Then an observer in the frame $S$ would measure these instants as per the Lorentz transformation to be
+		\begin{align*}
+			ct_1=\gamma\qty(ct_1'+\beta x')&\qq{and}ct_2=\gamma\qty(ct_2'+\beta x') \\
+			\implies t_1=\gamma\qty(t_1'+\dfrac{\beta}{c} x')&\qq{and}t_2=\gamma\qty(t_2'+\dfrac{\beta}{c} x') \\
+			\implies t_1=\gamma\qty(t_1'+\dfrac{vx'}{c^2})&\qq{and}t_2=\gamma\qty(t_2'+\dfrac{vx'}{c^2})
+		\end{align*}
+		
+		The time interval between these two events with respect to an observer in the frame $S$ would then be
+		\begin{align*}
+			\Delta t&=t_2-t_1 \\
+				&=\gamma\qty(t_2'+\dfrac{vx'}{c^2})-\gamma\qty(t_1'+\dfrac{vx'}{c^2}) \\
+				&=\gamma\qty[t_2'+\dfrac{vx'}{c^2}-t_1'-\dfrac{vx'}{c^2}] \\
+				&=\gamma\qty(t_2'-t_1') \\
+			\implies\Delta t&=\gamma\Delta\tau \\
+			\implies\boxed{\Delta\tau=\Delta t\sqrt{1-\beta^2}}&\qq{or}\boxed{\Delta t=\dfrac{\Delta\tau}{\sqrt{1-\beta^2}}}
+		\end{align*}
+		
+		We know that
+		\begin{align*}
+			\gamma&\geqslant 1 \\
+			\implies\dfrac{\Delta t}{\Delta\tau}&\geqslant 1 \\
+			\implies\Delta t&\geqslant\Delta\tau
+		\end{align*}
+		
+		Therefore, to a stationary observer in the frame $S$, the time interval between the two events seems to increase.
+		
+		This phenomenon is known as \textbf{time dilation}. The faster something moves, the slower time appears to pass for it to someone observing from a stationary frame.
+		
+	\subsection{Relativity of simultaneity}
+		\setcounter{equation}{0}
+		Consider two events $P$ and $Q$ that occur at two different positions $x_1$ and $x_2$ at two different instants $t_1$ and $t_2$ respectively in the inertial frame $S$.
+		
+		Then, using the Lorentz transformations, we have the corresponding instants in some other inertial frame $S'$ as follows:
+		\begin{align*}
+			ct_1'=\gamma\qty(ct_1-\beta x_1)&\qq{and}ct_2'=\gamma\qty(ct_2-\beta x_2) \\
+			\implies t_1'=\gamma\qty(t_1-\dfrac{\beta}{c}x_1)&\qq{and}t_2'=\gamma\qty(t_2-\dfrac{\beta}{c}x_2) \\
+			\implies t_1'=\gamma\qty(t_1-\dfrac{vx_1}{c^2})&\qq{and}t_2'=\gamma\qty(t_2-\dfrac{vx_2}{c^2})
+		\end{align*}
+		
+		This gives us the time interval between these two events as measured by an observer in the frame $S'$ to be
+		\begin{align}
+			t_2'-t_1'&=\gamma\qty(t_2-\dfrac{vx_2}{c^2})-\gamma\qty(t_1-\dfrac{vx_1}{c^2}) \nonumber\\
+			\implies t_2'-t_1'&=\gamma\qty(t_2-t_1)+\dfrac{\gamma v}{c^2}\qty(x_1-x_2) \label{eqn:rel-simult-01}
+		\end{align}
+		
+		Now, suppose both events occur simultaneously at their respective positions in the frame $S$, i.e. $t_1=t_2$. Then in equation (\ref{eqn:rel-simult-01}), we would have
+		\begin{align}
+			t_2'-t_1'&=\dfrac{\gamma v}{c^2}\qty(x_1-x_2)\neq 0 \label{eqn:rel-simult-02}
+		\end{align}
+		
+		Equation (\ref{eqn:rel-simult-02}) indicates that two events, which are simultaneous in one reference frame, are not simultaneous in another moving relative to the first, unless both events occur at the same position in space.
+		
+	\subsection{Relativistic mass}
