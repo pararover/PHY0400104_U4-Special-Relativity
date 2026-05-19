@@ -142,3 +142,57 @@
 			\end{align*}
 			Here the $-$ sign indicates that the rocket is moving towards the Earth.
 		\end{enumerate}
+		
+	\subsection{Length contraction}
+		\setcounter{equation}{0}
+		Suppose we have a rod of natural length $L_0$, whose ends are marked as \#1 and \#2, that is moving with a velocity $v$ with respect to a rest frame $S$.
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=0.45\textwidth]{figures/fig_length-contraction.png}
+		\end{figure}
+		
+		Then the rod would be at rest with respect to the moving frame $S'$. If $x_1'$ and $x_2'$ are the coordinates of either ends of the rod in the frame $S'$, then the natural length of the rod is
+		\begin{align}
+			L_0&=x_2'-x_1' \label{eqn:rod:natural-length}
+		\end{align}
+		Now, if the corresponding coordinates of either end of the rod in the rest frame $S$ are $x_1$ and $x_2$ respectively, then the length of the rod, as measured in the frame $S$ is
+		\begin{align}
+			L&=x_2-x_1 \label{eqn:rod:rel-length}
+		\end{align}
+		
+		Using Lorentz transformation, if we measure the coordinates $x_1$ and $x_2$ simultaneously, we have
+		\begin{align}
+			x_1'=\gamma\qty(x_1-\beta ct)&\qq{and}x_2'=\gamma\qty(x_2-\beta ct) \nonumber\\
+			\implies x_1'=\gamma\qty(x_1-vt)&\qq{and}x_2'=\gamma\qty(x_2-vt) \label{eqn:x1-x2-in-Sp}
+		\end{align}
+		
+		Inserting equations (\ref{eqn:x1-x2-in-Sp}) in equation (\ref{eqn:rod:natural-length}), we have
+		\begin{align}
+			L_0&=\gamma\qty(x_2-vt)-\gamma\qty(x_1-vt) \nonumber\\
+				&=\gamma\qty[x_2-vt-x_1+vt] \nonumber\\
+				&=\gamma\qty(x_2-x_1) \nonumber\\
+			\implies L_0&=\gamma L\qq{[using eqn. (\ref{eqn:rod:rel-length})]} \nonumber\\
+			\implies \boxed{L_0=\dfrac{L}{\sqrt{1-\beta^2}}}&\qq{or}\boxed{L=L_0\sqrt{1-\beta^2}} \label{eqn:length-contraction}
+		\end{align}
+		
+		We know that
+		\begin{align*}
+			\gamma&\geqslant 1 \\
+			\implies\dfrac{L_0}{L}&\geqslant 1 \\
+			\implies L&\leqslant L_0
+		\end{align*}
+		
+		Therefore, to a stationary observer in the frame $S$, the rod seems as if it has contracted parallel to the direction of its motion.
+		
+		This phenomenon of length contraction is known as the \textbf{Lorentz-Fitzgerald contraction}.
+		
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=0.5\textwidth]{figures/fig_length-contraction-example-01.png}
+		\end{figure}
+		
+		The faster something moves, the more squashed it appears to someone observing from a stationary frame. This happens the other way around as well.
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=0.5\textwidth]{figures/fig_length-contraction-example-02.png}
+		\end{figure}
